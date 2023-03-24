@@ -1,0 +1,9 @@
+version: '3'
+services:
+  go-all-the-way:
+    build: .
+    container_name: go-recipe-app
+    volumes:
+      - .:/go-all-the-way
+    ports:
+      - "8080:8080"
